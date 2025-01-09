@@ -6,24 +6,25 @@ The Aerolínea Factoría F5 project is a comprehensive RESTful API designed for 
 The system guarantees that no bookings can be made for unavailable flights or those exceeding their operational dates.
 
 ## ✅Features Overview
-User Management
+
+# User Management
  - Role-Based Access Control: Includes ROLE_ADMIN and ROLE_USER for access differentiation.
  - User Registration: Allows users to sign up with personal information.
  - Profile Picture Upload: Users can upload a profile picture; a default image is shown otherwise.
  - User Login: Secure login with JWT or Basic Auth for API access.
-Flight Management
+# Flight Management
  - Flight Scheduling: Automatic creation of flight data during initialization via SQL scripts.
  - Dynamic Status Updates: Automatically marks flights as unavailable (false) when seats are fully booked or dates are invalid.
  - Search Functionality: Search flights by departure and arrival locations, date, and available seats.
-Reservation Management
+# Reservation Management
  - Booking Validation: Ensures reservations can only be made for available flights.
  - Seat Locking: Locks seats for 15 minutes during booking to prevent double-booking.
  - User-Specific Reservations: Allows users to view their reservation history.
-Admin Management
+# Admin Management
  - CRUD for Airports: Manage airport data.
  - CRUD for Flight Routes: Add, update, delete, and view flight routes.
  - Reservation Overview: View a summary of reservations made by users.
-Exception Handling
+# Exception Handling
  - Custom Exception Handling: Ensures a seamless user experience with detailed error messages.
 
 ## ✅Prerequisites
@@ -38,10 +39,7 @@ Exception Handling
 
 1 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/Snysic/SpringbootAerolinea.git
-cd Aerolinea_FactoriaF5
+ ``https://github.com/Snysic/SpringbootAerolinea.git``
 
 2 Set up the project in your IDE:
 
@@ -93,16 +91,16 @@ DELETE http://localhost:8080/api/reservations/{id}
 
 Admin Management
 - CRUD for Airports:
-POST http://localhost:8080/api/admin/airports
-PUT http://localhost:8080/api/admin/airports/{id}
-DELETE http://localhost:8080/api/admin/airports/{id}
-GET http://localhost:8080/api/admin/airports
+- POST http://localhost:8080/api/admin/airports
+- PUT http://localhost:8080/api/admin/airports/{id}
+- DELETE http://localhost:8080/api/admin/airports/{id}
+- GET http://localhost:8080/api/admin/airports
 
 - CRUD for Flight Routes:
-POST http://localhost:8080/api/admin/routes
-PUT http://localhost:8080/api/admin/routes/{id}
-DELETE http://localhost:8080/api/admin/routes/{id}
-GET http://localhost:8080/api/admin/routes
+- POST http://localhost:8080/api/admin/routes
+- PUT http://localhost:8080/api/admin/routes/{id}
+- DELETE http://localhost:8080/api/admin/routes/{id}
+- GET http://localhost:8080/api/admin/routes
 
 ## ✅Testing
 
@@ -111,8 +109,7 @@ GET http://localhost:8080/api/admin/routes
 
 Running Tests
 Run the test suite in your IDE or use Maven:
-bash
-Copy code
+
 mvn test
 Review test coverage reports.
 
