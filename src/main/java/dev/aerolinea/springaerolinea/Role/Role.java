@@ -1,4 +1,4 @@
-package dev.aerolinea.springaerolinea.Entities;
+package dev.aerolinea.springaerolinea.Role;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,7 +1,9 @@
-package dev.aerolinea.springaerolinea.Entities;
+package dev.aerolinea.springaerolinea.Reservation;
 
 import java.time.LocalDateTime;
 
+import dev.aerolinea.springaerolinea.Flight.Flight;
+import dev.aerolinea.springaerolinea.User.User;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

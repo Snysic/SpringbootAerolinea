@@ -1,7 +1,8 @@
-package dev.aerolinea.springaerolinea.Entities;
+package dev.aerolinea.springaerolinea.User;
 
 import java.util.List;
 
+import dev.aerolinea.springaerolinea.Role.Role;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;

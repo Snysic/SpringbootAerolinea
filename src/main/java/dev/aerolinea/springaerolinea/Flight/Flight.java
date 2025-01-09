@@ -1,4 +1,4 @@
-package dev.aerolinea.springaerolinea.Entities;
+package dev.aerolinea.springaerolinea.Flight;
 
 import java.time.LocalDateTime;
 
