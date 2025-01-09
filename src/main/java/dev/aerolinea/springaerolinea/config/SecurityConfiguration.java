@@ -1,5 +1,5 @@
 package dev.aerolinea.springaerolinea.config;
 
-public class JwtAuthFilter {
+public class SecurityConfiguration {
     
 }
