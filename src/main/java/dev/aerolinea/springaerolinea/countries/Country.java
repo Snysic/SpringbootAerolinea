@@ -1,32 +1,37 @@
-package dev.aerolinea.springaerolinea.Role;
+package dev.aerolinea.springaerolinea.countries;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
-public class Role {
-     @Id
+@Table(name = "countries")
+public class Country {
+
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_country")
     private Long id;
 
     private String name;
 
-    
-    public Long getId() {
-        return id;
+    public Country() {
     }
 
-    public void setId(Long id) {
+    public Country(Long id, String name) {
         this.id = id;
+        this.name = name;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 }

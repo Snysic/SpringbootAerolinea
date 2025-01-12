@@ -1,4 +1,4 @@
-package dev.aerolinea.springaerolinea.Role;
+package dev.aerolinea.springaerolinea.roles;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
